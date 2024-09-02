@@ -73,6 +73,56 @@
         ><i class="fa-brands fa-github"></i
       ></a>
     </header>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Identify Any biological Disease With AI</h1>
+        <p>
+          Upload an image of any plant or animal, and
+          <strong>Advanced AI</strong> will instantly recognize the type, name
+          of disease, causes, and disease.
+        </p>
+        <form
+          action="/upload"
+          method="post"
+          enctype="multipart/form-data"
+          class="upload-section"
+          id="uploadForm"
+        >
+          <input
+            type="file"
+            name="image"
+            accept="image/*"
+            required
+            style="display: none"
+            id="fileInput"
+          />
+          <label for="fileInput" class="upload-button" id="uploadButton"
+            >Upload Image</label
+          >
+          <button
+            type="submit"
+            class="upload-button"
+            id="runButton"
+            style="display: none"
+          >
+            Run
+          </button>
+          <div class="file-info" id="fileInfo" style="display: none">
+            <span class="file-name" id="fileName"></span>
+            <button type="button" class="remove-button" id="removeButton">
+              X
+            </button>
+          </div>
+          <p class="drop-text" id="dropText">
+            or drag and drop your image here
+          </p>
+          <div class="drop-zone" id="dropZone" style="display: none">
+            <p id="dropHereText" style="display: none">Drop Here</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="/js/script.js"></script>
   </body>
 </html>
