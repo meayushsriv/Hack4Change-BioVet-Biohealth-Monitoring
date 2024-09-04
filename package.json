@@ -1,7 +1,7 @@
 {
-  "name": "BioVet-AI",
+  "name": "bioVet-AI",
   "version": "1.0.0",
-  "description": "Identify any plant and animal disease with AI",
+  "description": "Identify any Biological Disease with AI",
   "main": "index.js",
   "engines": {
     "node": "20.14.0"
