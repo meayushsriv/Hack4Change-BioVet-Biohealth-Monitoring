@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const multer = require("multer");
 const {
-  GoogleGenerativeAI,
+  GoogleGenerativeAI, 
   HarmCategory,
   HarmBlockThreshold,
 } = require("@google/generative-ai");
