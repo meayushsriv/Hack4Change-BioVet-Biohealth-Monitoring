@@ -49,7 +49,6 @@ app.post("/upload", upload.single("image"), async (req, res) => {
     }
   }
 });
-
 const getbioInfo = async (imageBuffer) => {
   const genAI = new GoogleGenerativeAI(API_KEY);
   const model = genAI.getGenerativeModel({ model: MODEL_NAME });
